@@ -1,27 +1,26 @@
 {
-    // See https://go.microsoft.com/fwlink/?LinkId=733558
-    // for the documentation about the tasks.json format
-    "version": "2.0.0",
-    "tasks": [
-      {
-        "label": "Create Python Notebook",
-        "type": "shell",
-        "command": "cp HR_Python_Analytics/01_notebooks/01_template/nb_template.ipynb HR_Python_Analytics/01_notebooks/${input:param1}.ipynb && sed -i 's/Notebooktitle/${input:param2}/' HR_Python_Analytics/01_notebooks/${input:param1}.ipynb && code HR_Python_Analytics/01_notebooks/${input:param1}.ipynb"
-      }
-    ],
-    "inputs": [
-      {
-        "id": "param1",
-        "description": "Author's initials, month number, title ",
-        "default": "ag_0_title",
-        "type": "promptString"
-      },
-      {
-        "id": "param2",
-        "description": "Notebook Title",
-        "default": "Sample Notebook Title",
-        "type": "promptString"
-      }
-    ]
-  }
-  
+  // See https://go.microsoft.com/fwlink/?LinkId=733558
+  // for the documentation about the tasks.json format
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Create Python Notebook",
+      "type": "shell",
+      "command": "cp Py_HY_Analytics/01_notebooks/01_template/nb_template.ipynb Py_HY_Analytics/01_notebooks/${input:param1}.ipynb && sed -i 's/Notebooktitle/${input:param2}/' Py_HY_Analytics/01_notebooks/${input:param1}.ipynb && code Py_HY_Analytics/01_notebooks/${input:param1}.ipynb"
+    }
+  ],
+  "inputs": [
+    {
+      "id": "param1",
+      "description": "Author's initials, month number, title ",
+      "default": "ag_0_title",
+      "type": "promptString"
+    },
+    {
+      "id": "param2",
+      "description": "Notebook Title",
+      "default": "Sample Notebook Title",
+      "type": "promptString"
+    }
+  ]
+}
