@@ -28,12 +28,10 @@ from pptx import Presentation
 from pptx.util import Inches
 
 
-class Get_Data:
+class Data:
 
     # init method or constructor
-    def __init__(
-        self, request_from,
-    ):
+    def __init__(self,):
         self.__db_type = cfg.db["type"]
         self.__db_name = cfg.db["database"]
         self.__output_path = None

@@ -1,3 +1,9 @@
+import os
+
+# get root working directory
+path = os.getcwd()
+root = os.path.abspath(os.path.join(path, os.pardir))
+
 """
 Set variables for the project
 Sets paths to specific locations, input, output, queries
@@ -13,14 +19,14 @@ db = {
 
 # Set paths to input, load, output, queries
 path = {
-    "input": "C:\]Users\\garciand\\OneDrive - HP Inc\\Desktop\\HR_Python_Analytics\\03_data\01_raw\\",
-    "load": "C:\]Users\\garciand\\OneDrive - HP Inc\\Desktop\\HR_Python_Analytics\\03_data\03_processed\\",
-    "output": "C:\]Users\\garciand\\OneDrive - HP Inc\\Desktop\\HR_Python_Analytics\\03_data\03_cleaned\\",
-    "queries": "C:\]Users\\garciand\\OneDrive - HP Inc\\Desktop\\HR_Python_Analytics\\03_data\04_queries\\",
+    "input": root + "\\03_data\\01_raw\\",
+    "load": root + "\\03_data\\02_processed\\",
+    "output": root + "\\03_data\\03_cleaned\\",
+    "queries": root + "\\03_data\\04_queries\\",
 }
 
 # set cmd colors
-B_Colors = {
+CMD_Colors = {
     "HEADER": "\033[95m",
     "OKBLUE": "\033[94m",
     "OKCYAN": "\033[96m",
