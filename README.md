@@ -30,6 +30,7 @@ Here is the Structure overview: everything gets its own place, and all things re
        |- 01_raw/
        |- 02_processed/
        |- 03_cleaned/
+       |- 04_queries/
     |- 04_scripts/
        |- script1.py
        |- script2.py
